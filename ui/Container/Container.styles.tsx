@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import IContainerProps from './Container.interface'
 
 const StyledContainer = styled.div`
+    display: flex;
     flex: ${(props: IContainerProps) => props.flexValue ? props.flexValue : 'auto;'}
     flex-direction: ${(props: IContainerProps) => props.flexDirection ? props.flexDirection : 'column;'}
     flex-basis: ${(props: IContainerProps) => props.flexBasis ? props.flexBasis: 'auto;'}
